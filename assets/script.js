@@ -15,6 +15,14 @@ function generatePassword () {
 
     // PROMPT the user for a 'passwordLength' 
     const passwordLength = prompt("Provide a length");
+
+    //IF NOT ( passwordlength >=8 || paswordLength <= 128 )
+    if( !(passwordLength >=8 || passwordLength<= 128) ) {
+        // THEN ALERT to the user that they need to provide correct length
+        alert("Wrong");
+        // AND Exit Funtion
+        return;
+    }
 }
 
 // DECLARE a new list of 'charactersToUse'
@@ -40,8 +48,18 @@ function generatePassword () {
 // Then push 'specialCharacters' into 'charactersToUse' list
 
 // DECLARE a new 'password' string
+var password = "";
+
+// FOR i = 0; CONTINUE as long as i < passswordLength; i++;
+for( var i = 0; i < passwordLength; i++ ) {
+
+}
 
 // WHILE password.length < passwordLength
+while ( password.length < passwordLength) {
+
+
+}
 
 // SELECT 'randomCharacter' a character from 'charactersToUs'
 // APPEND 'randomCharacter' to 'password' string
