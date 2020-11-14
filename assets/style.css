@@ -33,6 +33,7 @@ header {
   margin: auto;
   max-width: 600px;
   padding: 20px 25px;
+  text-align: center;
 }
 
 .box-header ::after{
@@ -41,6 +42,7 @@ header {
   width: 100%;
   background-color: grey;
   height: 5px;
+  text-align: center;
 }
 
 .box-body {
@@ -68,5 +70,57 @@ header {
 .button {
   border: none;
   background-color: red;
+  border-radius: 25px;
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 15px 15px 15px 20px;
+  padding: 15px 30px;
+  text-align: center;
+  cursor: pointer;
+}
 
+button[disabled] {
+  cursor: default;
+  background: grey;
+}
+
+.float-right {
+  float: right;
+}
+
+#password {
+ display: block;
+ width: 100%;
+ padding-left: 15px;
+ padding-top: 15px;
+ padding-right: 15px;
+ padding-bottom: 75px;
+ font-size: 15px;
+ text-align: center;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ border: 2px dashed grey;
+ border-radius: 5px;
+ resize: none;
+ overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .button {
+    font-size: 15px;
+    margin: 15px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  #password {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .button {
+    font-size: 15px;
+  }
 }
