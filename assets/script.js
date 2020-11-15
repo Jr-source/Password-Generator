@@ -40,10 +40,10 @@ function generatePassword(){
 
 
 //Confirming arrays: Variables
-confirmAddLowercase = confirm("If you would like to include lowercase characters? = click OKAY");
-confirmAddUppercase = confirm("If you would like to include uppercase characters? = click OKAY");
-confirmAddSymbols = confirm("If you would like to include symbol characters? = click OKAY");
-confirmAddNumbers = confirm("If you would like to include numbers? = click OKAY");
+confirmAddLowercase = confirm("If you would like to include lowercase characters? If yes click OK");
+confirmAddUppercase = confirm("If you would like to include uppercase characters? If yes click OK");
+confirmAddSymbols = confirm("If you would like to include symbol characters? If yes click OK");
+confirmAddNumbers = confirm("If you would like to include numbers? If yes click OK");
 
 //Alerting user to use 'click' okay 
 if (!confirmAddLowercase && !confirmAddUppercase && !confirmAddNumbers && !confirmAddSymbols) {

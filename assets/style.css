@@ -5,44 +5,44 @@
 html,
 body,
 .wrapper {
-  height: 100%;
-  margin: auto;
-  padding: 0%;
-  padding-top: 25px;
-  padding-right: 20px;
+  padding-top: 30px;
   padding-left: 20px;
+  padding-right: 20px;
+ 
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
-  background-color: white;
+  font-family: sans-serif;
+  background-color: #f9fbfd;
 }
 
 header {
   text-align: center;
   padding: 20px;
+  padding-top: 0px;
+  color: hsl(206, 17%, 28%);
 }
 
 .box {
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: grey;
-  color: black;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
   font-size: 18px;
-  margin: auto;
-  max-width: 600px;
-  padding: 20px 25px;
-  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
 }
 
+
 .box-header ::after{
-  content: "";
+  content: " ";
   display: block;
   width: 100%;
-  background-color: grey;
-  height: 5px;
-  text-align: center;
+  background: #e7e9eb;
+  height: 2px;
+
 }
 
 .box-body {
@@ -54,36 +54,38 @@ header {
 }
 
 .box-footer::before {
-  content: "";
+  content: " ";
   display: block;
   width: 100%;
-  background: white;
-  height: 5px;
+  background: #e7e9eb;
+  height: 2px;
 }
 
 .box-footer::after {
-  content: "";
+  content: " ";
   display: block;
   clear: both;
 }
 
 .button {
   border: none;
-  background-color: red;
+  background-color: hsl(360, 91%, 36%);
   border-radius: 25px;
-  color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+  color: hsl(0, 0%, 100%);
   display: inline-block;
-  font-size: 20px;
-  line-height: 20px;
-  margin: 15px 15px 15px 20px;
-  padding: 15px 30px;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
   text-align: center;
   cursor: pointer;
 }
 
 button[disabled] {
   cursor: default;
-  background: grey;
+  background: #c0c7cf;
 }
 
 .float-right {
@@ -91,36 +93,40 @@ button[disabled] {
 }
 
 #password {
- display: block;
- width: 100%;
- padding-left: 15px;
- padding-top: 15px;
- padding-right: 15px;
- padding-bottom: 75px;
- font-size: 15px;
- text-align: center;
- margin-top: 10px;
- margin-bottom: 10px;
- border: 2px dashed grey;
- border-radius: 5px;
- resize: none;
- overflow: hidden;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px dashed #c0c7cf;
+  border-radius: 6px;
+  resize: none;
+  overflow: hidden;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 690px) {
   .button {
-    font-size: 15px;
-    margin: 15px 0px 0px 0px;
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
     padding: 10px 15px;
   }
 
   #password {
-    font-size: 15px;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 500px) {
   .button {
-    font-size: 15px;
+    font-size: 0.8rem;
   }
 }
